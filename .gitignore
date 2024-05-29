@@ -1,11 +1,1 @@
-# Local Netlify folder
-# threejs vite nodejs
-.netlify
-
-public/
-node_modules/
-package-lock.json
-.DS_Store
-.vs/
-package.json
-package-lock.json
+node_modules

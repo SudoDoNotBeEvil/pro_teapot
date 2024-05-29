@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<title>three.js ar - cones</title>
 		<meta charset="utf-8">
-		<title>My first three.js app</title>
-		<style>
-			body { margin: 0; }
-		</style>
-		<script type="module" crossorigin src="/assets/index-B5Qt9EMX.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link type="text/css" rel="stylesheet" href="./proteapot/styles/proteapot_hud_menu.css">
 	</head>
 	<body>
-        sdfdsf
-	</body>
+		<div class="buttons_panel">
+			<button class="hud_button" id="hud_save_button"> Save </button>
+			<button class="hud_button" id="hud_load_button"> Load </button>
+			<button class="hud_button" id="hud_pivot_button"> Pivot </button>
+			<button class="hud_button" id="hud_model_button"> Model </button>
+		</div>
+	<script type="importmap">
+		{
+			"imports": {
+			"three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+			"three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+			}
+		}
+	</script>
+
+	<script type="module">
+		import * as THREE from 'three';
+		//import * as THREE from './three.module.js';
+		import { ARButton } from 'three/addons/webxr/ARButton.js';
+	</script>
 </html>
