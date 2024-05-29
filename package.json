@@ -1,28 +1,20 @@
 {
-  "name": "threejs-boilerplate",
+  "name": "threejs-starter-vite",
+  "private": true,
   "version": "1.0.0",
-  "description": "A Threejs Boilerplate to aid in quick prototyping",
+  "type": "module",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Sean-Bradley/Threejs-Boilerplate.git"
+  "devDependencies": {
+    "@types/three": "^0.163.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
   },
-  "keywords": [
-    "threejs",
-    "boilerplate",
-    "threejs boilerplate"
-  ],
-  "author": "Sean Bradley",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Sean-Bradley/Threejs-Boilerplate/issues"
-  },
-  "homepage": "https://github.com/Sean-Bradley/Threejs-Boilerplate#readme",
   "dependencies": {
-    "express": "^4.18.2",
-    "three": "^0.157.0"
+    "lil-gui": "^0.19.2",
+    "three": "^0.164.1"
   }
 }
